@@ -1,0 +1,412 @@
+/*basic settings*/
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  background: url("https://cdn.pixabay.com/photo/2015/06/20/07/24/color-815547_960_720.png")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* clearfix */
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*basic settings ends here*/
+
+/*Header-text & media*/
+
+.hero-text {
+  max-width: 50%;
+  font-size: 2em;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  right: 0;
+  color: white;
+  float: left;
+  display: inline;
+}
+
+.hero-text h5 {
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  float: left;
+}
+@media (max-width: 1130px) {
+  .hero-text {
+    width: 50%;
+    font-size: 1.8em;
+    top: 20%;
+    left: 14%;
+  }
+}
+
+@media (max-width: 970px) {
+  .hero-text {
+    width: 40%;
+    font-size: 1.5em;
+    top: 15%;
+    left: 10%;
+  }
+}
+@media (max-width: 860px) {
+  .hero-text {
+    width: 60%;
+    font-size: 1.5em;
+    top: 5%;
+    left: 5%;
+  }
+}
+@media (max-width: 705px) {
+  .hero-text {
+    width: 60%;
+    font-size: 1.1em;
+    top: 4%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 605px) {
+  .hero-text {
+    width: 65%;
+    font-size: 1.2em;
+    top: 4%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text {
+    width: 65%;
+    font-size: 1em;
+    top: 3%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-text {
+    width: 60%;
+    font-size: 1em;
+    top: 3%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-text {
+    width: 80%;
+    font-size: 0.7em;
+    top: 2%;
+    left: 6%;
+  }
+}
+/*Header-image & media*/
+.profil-img {
+  max-width: 49%;
+  float: right;
+  margin-top: -8%;
+}
+@media (max-width: 1000px) {
+  .profil-img {
+    max-width: 39%;
+    margin-top: -5%;
+    margin-bottom: 2.2%;
+  }
+}
+
+@media (max-width: 850px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 3.2%;
+  }
+}
+@media (max-width: 750px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 4.2%;
+  }
+}
+@media (max-width: 600px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 7.2%;
+  }
+}
+@media (max-width: 490px) {
+  .profil-img {
+    max-width: 30%;
+    margin-top: -5%;
+    margin-bottom: 11.2%;
+  }
+}
+
+@media (max-width: 410px) {
+  .profil-img {
+    max-width: 25%;
+    margin-top: -5%;
+    margin-bottom: 13.5%;
+  }
+}
+
+@media (max-width: 370px) {
+  .profil-img {
+    max-width: 25%;
+    margin-top: -5%;
+    margin-bottom: 16.5%;
+  }
+}
+/*About & media*/
+
+.textAbout {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 1000px;
+  color: beige;
+  padding: 3%;
+  background-color: rgb(94, 182, 209);
+  margin-top: -68px;
+  box-shadow: rgb(159, 165, 165) 2px 2px 2px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1350px) {
+  .textAbout {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 700px) {
+  .textAbout {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+.textAbout p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 650px) {
+  .textAbout p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
+/*Personal Info*/
+.textInfo {
+  background-color: rgb(228, 72, 163);
+  box-shadow: rgb(97, 59, 233) 2px 2px 2px;
+}
+
+.textInfo li {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.3em;
+  color: beige;
+}
+
+/*Education*/
+.eduInfo {
+  background-color: rgb(166, 72, 228);
+
+  box-shadow: rgb(60, 40, 129) 2px 2px 2px;
+}
+
+/*General box settings and media queries*/
+.hobbiesInfo,
+.codeSkillFuture,
+.codeSkillInfo,
+.skillInfo,
+.workInfo,
+.textInfo,
+.eduInfo {
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 1000px;
+  color: beige;
+  padding: 3%;
+  border-radius: 8px;
+}
+
+@media (max-width: 1350px) {
+  .hobbiesInfo,
+  .codeSkillFuture,
+  .codeSkillInfo,
+  .skillInfo,
+  .workInfo,
+  .textInfo,
+  .eduInfo {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hobbiesInfo,
+  .codeSkillFuture,
+  .codeSkillInfo,
+  .skillInfo,
+  .workInfo,
+  .textInfo,
+  .eduInfo {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
+
+/*Work*/
+.workInfo {
+  background-color: rgb(94, 148, 209);
+  box-shadow: rgb(74, 61, 243) 2px 2px 2px;
+}
+
+.textCenter {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.textRight {
+  text-align: right;
+}
+
+/*Skills*/
+.skillInfo {
+  background-color: rgb(202, 85, 104);
+  box-shadow: rgb(243, 185, 61) 2px 2px 2px;
+}
+
+.skillInfo h2 {
+  text-align: center;
+}
+
+.skillInfo strong,
+p {
+  display: inline;
+}
+
+.middle {
+  text-align: center;
+  margin-top: 2%;
+  letter-spacing: 0.2em;
+  line-height: 2em;
+}
+
+.codeSkillInfo h2,
+.codeSkillFuture h2,
+h5,
+.hobbiesInfo h2 {
+  text-align: center;
+}
+
+.codeSkillFuture h5 {
+  font-size: 1.1em;
+}
+.codeSkillInfo {
+  background-color: rgb(235, 57, 57);
+  box-shadow: rgb(177, 173, 166) 2px 2px 2px;
+}
+
+/*What´s next?*/
+
+.codeSkillFuture {
+  background-color: rgb(170, 57, 235);
+  box-shadow: rgb(207, 6, 191) 2px 2px 2px;
+}
+
+/*Hobbies*/
+
+.hobbiesInfo {
+  background-color: rgb(57, 84, 235);
+  box-shadow: rgb(17, 19, 139) 2px 2px 2px;
+  margin-bottom: 10%;
+}
+
+/*Button*/
+
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*HideMe*/
+.hideMe {
+  opacity: 0;
+}
